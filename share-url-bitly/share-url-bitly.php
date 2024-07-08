@@ -2,6 +2,12 @@
 
 
 /*
+Plugin Name: Share URL Bitly
+Plugin URI: https://github.com/madnansultandotme/Share-Url-Bitly-Plugin.git
+Description: A plugin to shorten URLs using Bitly and add share buttons.
+Version: 1.0.0
+Author: Zeppelin Team
+Author URI: https://github.com/madnansultandotme/Share-Url-Bitly-Plugin.git
  * @Author: Zeppelin
  * @Date:   2024-07-08 
  * @Last Modified by:   Zeppelin
