@@ -1,0 +1,76 @@
+.su_social_share_buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.su_share_button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #3b5998; /* Default to Facebook blue */
+}
+
+.su_share_button.su_facebook_share {
+    background-color: #3b5998;
+}
+
+.su_share_button.su_linkedin_share {
+    background-color: #0077b5;
+}
+
+.su_share_button.su_email_share {
+    background-color: #dd4b39;
+}
+
+.su_share_button i {
+    vertical-align: middle;
+}
+
+.su_tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.su_tooltip .su_tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.su_tooltip .su_tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.su_tooltip:hover .su_tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
